@@ -18,6 +18,8 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+
 </head>
 
 <body>
@@ -26,8 +28,10 @@
   <header class="header" id="header">
     <div class="header__container">
       <div class="header__top d-flex justify-content-between">
-        <div class="d-flex time">
-          <span><i class="text-green fa fa-clock"></i></span>
+        <div class="d-flex time ">
+          <span class="text-center"><svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0,0,256,256">
+            <g fill="#11ab6b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM22.47656,11.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v11c0.00008,0.3978 0.15815,0.77928 0.43945,1.06055l5,5c0.37623,0.39185 0.9349,0.54969 1.46055,0.41265c0.52565,-0.13704 0.93616,-0.54754 1.07319,-1.07319c0.13704,-0.52565 -0.0208,-1.08432 -0.41265,-1.46055l-4.56055,-4.56055v-10.37891c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g>
+            </svg></span>
           <p class="text-grey">Mon - Fri : 8.00 am - 6.00 pm</p>
         </div>
   
@@ -41,25 +45,23 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
             <img src="./assets/img/logo.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav fw-semibold">
                 <li class="nav-item">
                   <a class=" text-green nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop Home</a>
+                  <a class="text-dark nav-link" href="#service">Shop Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pages</a>
+                  <a class="text-dark nav-link" href="#people">Pages</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Portfolio</a>
+                  <a class="text-dark nav-link" href="#question">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Blog</a>
+                  <a class="text-dark nav-link" href="#news">Blog</a>
                 </li>
               </ul>
             </div>
@@ -68,9 +70,11 @@
         
         
           
-          <button type="button" class=" contact-btn btn btn-primary btn-lg">
+          <button type="button" class="contact-btn btn btn-primary btn-lg">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M20.2734 18.6914C19.9499 18.6914 19.6875 18.9537 19.6875 19.2773V23.3203C19.6875 24.9357 18.3732 26.25 16.7578 26.25H10.4316C10.1081 26.25 9.84586 26.5121 9.84562 26.8355L9.8448 28.0005L8.44629 26.602C8.35576 26.3942 8.14857 26.25 7.90893 26.25H4.10156C2.48613 26.25 1.17188 24.9357 1.17188 23.3203V14.2969C1.17188 12.6814 2.48613 11.3672 4.10156 11.3672H10.0195C10.3431 11.3672 10.6055 11.1049 10.6055 10.7812C10.6055 10.4576 10.3431 10.1953 10.0195 10.1953H4.10156C1.83996 10.1953 0 12.0353 0 14.2969V23.3203C0 25.5819 1.83996 27.4219 4.10156 27.4219H7.60887L10.0154 29.8284C10.1275 29.9405 10.2773 30 10.4298 30C10.5052 30 10.5813 29.9854 10.6537 29.9555C10.8727 29.8649 11.0154 29.6514 11.0156 29.4145L11.017 27.4219H16.7578C19.0194 27.4219 20.8594 25.5819 20.8594 23.3203V19.2773C20.8594 18.9537 20.597 18.6914 20.2734 18.6914Z" fill="white"></path><path d="M21.4837 0H20.0007C15.3048 0 11.4844 3.82043 11.4844 8.51637C11.4844 13.2123 15.3048 17.0327 20.0007 17.0327H21.4836C22.2166 17.0327 22.942 16.9396 23.6452 16.7556L25.8358 18.945C25.9479 19.057 26.0977 19.1165 26.2501 19.1165C26.3256 19.1165 26.4018 19.1019 26.4743 19.0719C26.6932 18.9812 26.8359 18.7675 26.8359 18.5306V15.1406C27.7634 14.3895 28.5339 13.4406 29.0746 12.3807C29.6887 11.1768 30 9.87668 30 8.51637C30 3.82043 26.1796 0 21.4837 0ZM25.8974 14.3868C25.7505 14.4975 25.6641 14.6708 25.6641 14.8549V17.1166L24.2302 15.6835C24.1187 15.5721 23.969 15.512 23.816 15.512C23.7585 15.512 23.7005 15.5205 23.6439 15.5379C22.9465 15.7522 22.2197 15.8609 21.4837 15.8609H20.0007C15.9509 15.8609 12.6562 12.5661 12.6562 8.51637C12.6562 4.4666 15.951 1.17188 20.0007 1.17188H21.4837C25.5335 1.17188 28.8281 4.4666 28.8281 8.51637C28.8281 10.8444 27.76 12.9841 25.8974 14.3868Z" fill="white"></path><path d="M23.3801 6.41159C23.2956 5.18493 22.3068 4.1961 21.08 4.11155C20.3846 4.0638 19.721 4.29835 19.2131 4.77255C18.7121 5.24019 18.4248 5.90124 18.4248 6.58626C18.4248 6.90987 18.6872 7.1722 19.0107 7.1722C19.3343 7.1722 19.5967 6.90987 19.5967 6.58626C19.5967 6.21952 19.7445 5.87962 20.0127 5.62925C20.2807 5.37911 20.631 5.2553 20.9995 5.28073C21.6457 5.32526 22.1665 5.8461 22.2111 6.49222C22.2561 7.14478 21.8279 7.72146 21.1931 7.86349C20.6788 7.97857 20.3196 8.42552 20.3196 8.95034V10.3581C20.3196 10.6817 20.582 10.944 20.9055 10.944C21.2292 10.944 21.4915 10.6817 21.4914 10.3581V8.99716C22.6721 8.71193 23.4642 7.63157 23.3801 6.41159Z" fill="white"></path><path d="M21.3195 12.2615C21.2105 12.1525 21.0594 12.0898 20.9053 12.0898C20.7512 12.0898 20.6 12.1525 20.491 12.2615C20.382 12.3705 20.3193 12.5217 20.3193 12.6758C20.3193 12.8305 20.3821 12.9816 20.491 13.0906C20.6 13.1996 20.7512 13.2617 20.9053 13.2617C21.0594 13.2617 21.2105 13.1996 21.3195 13.0906C21.4285 12.9811 21.4912 12.8305 21.4912 12.6758C21.4912 12.5217 21.4285 12.3705 21.3195 12.2615Z" fill="white"></path><path d="M16.1133 18.1641H3.75C3.42645 18.1641 3.16406 18.4264 3.16406 18.75C3.16406 19.0736 3.42645 19.3359 3.75 19.3359H16.1133C16.4369 19.3359 16.6992 19.0736 16.6992 18.75C16.6992 18.4264 16.4368 18.1641 16.1133 18.1641Z" fill="white"></path><path d="M16.5275 21.617C16.4186 21.508 16.2674 21.4453 16.1133 21.4453C15.9592 21.4453 15.808 21.508 15.699 21.617C15.59 21.726 15.5273 21.8771 15.5273 22.0312C15.5273 22.1854 15.59 22.3365 15.699 22.4455C15.808 22.5545 15.9592 22.6172 16.1133 22.6172C16.2674 22.6172 16.4186 22.5545 16.5275 22.4455C16.6365 22.3365 16.6992 22.1859 16.6992 22.0312C16.6992 21.8771 16.6365 21.726 16.5275 21.617Z" fill="white"></path><path d="M13.8086 21.4453H3.75C3.42645 21.4453 3.16406 21.7076 3.16406 22.0312C3.16406 22.3549 3.42645 22.6172 3.75 22.6172H13.8086C14.1322 22.6172 14.3946 22.3549 14.3946 22.0312C14.3946 21.7076 14.1322 21.4453 13.8086 21.4453Z" fill="white"></path><path d="M12.3047 14.8828H3.75C3.42645 14.8828 3.16406 15.1451 3.16406 15.4688C3.16406 15.7924 3.42645 16.0547 3.75 16.0547H12.3047C12.6283 16.0547 12.8906 15.7924 12.8906 15.4688C12.8906 15.1451 12.6282 14.8828 12.3047 14.8828Z" fill="white"></path></svg>
-            (316) 555-0116</button>
+            <span class="phone">(316) 555-0116</span>
+          
+          </button>
         </div>
         
     </div>
@@ -81,10 +85,13 @@
   <!-- CAROUSEL -->
   <section class="carousel" id="carousel">
     <div class="carousel__container row">
-      <div class="carousel__left col-7">
-        <h1>Your Financial Future <br> <span class="text-green">Strategized</span> Today</h1>
-        <p class="text-grey-0">It is a long established fact that a reader will be distracted by the <br> reader content of a page when looking at its layout.</p>
-        <button type="button" class="rounded-pill btn btn-primary">Read More</button>
+      <div class="carousel__left  col-7">
+        <div class="carousel__left-content">
+          <h1>Your Financial Future <br> <span class="text-green">Strategized</span> Today</h1>
+          <p class="text-grey-0 my-5">It is a long established fact that a reader will be distracted by the <br> reader content of a page when looking at its layout.</p>
+          <button type="button" class="rounded-pill btn btn-primary">Read More</button>
+        </div>
+        
       </div>
       <div class="carousel__right col-5">
         <img class="w-100" src="./assets/img/carousel-bg.png" alt="">
