@@ -1,535 +1,899 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Finance Services - Nairobi</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Finance Services - Nairobi</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- FontAwesome 6.2.0 CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
 
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lexend:wght@500&family=Mulish:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
 
+  <body>
     <!-- HEADER -->
-  <header class="header" id="header">
-    <div class="header__container">
-      <div class="header__top d-flex justify-content-between">
-        <div class="d-flex time ">
-          <span class="text-center"><svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0,0,256,256">
-            <g fill="#11ab6b" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM22.47656,11.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v11c0.00008,0.3978 0.15815,0.77928 0.43945,1.06055l5,5c0.37623,0.39185 0.9349,0.54969 1.46055,0.41265c0.52565,-0.13704 0.93616,-0.54754 1.07319,-1.07319c0.13704,-0.52565 -0.0208,-1.08432 -0.41265,-1.46055l-4.56055,-4.56055v-10.37891c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"></path></g></g>
-            </svg></span>
-          <p class="text-grey">Mon - Fri : 8.00 am - 6.00 pm</p>
-        </div>
-  
-        <div class="d-flex email">
-          <span><i class="text-green fa fa-envelope"></i></span>
-          <p class="text-grey">finance@example.com</p>
-        </div>
-      </div>
-
-      <div class="header__bottom d-flex justify-content-between">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <img src="./assets/img/logo.png" alt="">
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav fw-semibold">
-                <li class="nav-item">
-                  <a class=" text-green nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-dark nav-link" href="#service">Shop Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-dark nav-link" href="#people">Pages</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-dark nav-link" href="#question">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="text-dark nav-link" href="#news">Blog</a>
-                </li>
-              </ul>
-            </div>
+    <header class="header" id="header">
+      <div class="header__container">
+        <div class="header__top d-flex justify-content-between">
+          <div class="d-flex time">
+            <span class="text-center"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="19"
+                height="19"
+                viewBox="0,0,256,256"
+              >
+                <g
+                  fill="#11ab6b"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(5.33333,5.33333)">
+                    <path
+                      d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,9.40661 -7.59338,17 -17,17c-9.40661,0 -17,-7.59339 -17,-17c0,-9.40661 7.59339,-17 17,-17zM22.47656,11.97852c-0.82766,0.01293 -1.48843,0.69381 -1.47656,1.52148v11c0.00008,0.3978 0.15815,0.77928 0.43945,1.06055l5,5c0.37623,0.39185 0.9349,0.54969 1.46055,0.41265c0.52565,-0.13704 0.93616,-0.54754 1.07319,-1.07319c0.13704,-0.52565 -0.0208,-1.08432 -0.41265,-1.46055l-4.56055,-4.56055v-10.37891c0.00582,-0.40562 -0.15288,-0.7963 -0.43991,-1.08296c-0.28703,-0.28666 -0.67792,-0.44486 -1.08353,-0.43852z"
+                    ></path>
+                  </g>
+                </g></svg
+            ></span>
+            <p class="text-grey">Mon - Fri : 8.00 am - 6.00 pm</p>
           </div>
-        </nav>
-        
-        
-          
+
+          <div class="d-flex email">
+            <span><i class="text-green fa fa-envelope"></i></span>
+            <p class="text-grey">finance@example.com</p>
+          </div>
+        </div>
+
+        <div class="header__bottom d-flex justify-content-between">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="./assets/img/logo.png" alt="" />
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fw-semibold">
+                  <li class="nav-item">
+                    <a class="text-green nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="#service">Shop Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="#people">Pages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="#question">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="text-dark nav-link" href="#news">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
           <button type="button" class="contact-btn btn btn-primary btn-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M20.2734 18.6914C19.9499 18.6914 19.6875 18.9537 19.6875 19.2773V23.3203C19.6875 24.9357 18.3732 26.25 16.7578 26.25H10.4316C10.1081 26.25 9.84586 26.5121 9.84562 26.8355L9.8448 28.0005L8.44629 26.602C8.35576 26.3942 8.14857 26.25 7.90893 26.25H4.10156C2.48613 26.25 1.17188 24.9357 1.17188 23.3203V14.2969C1.17188 12.6814 2.48613 11.3672 4.10156 11.3672H10.0195C10.3431 11.3672 10.6055 11.1049 10.6055 10.7812C10.6055 10.4576 10.3431 10.1953 10.0195 10.1953H4.10156C1.83996 10.1953 0 12.0353 0 14.2969V23.3203C0 25.5819 1.83996 27.4219 4.10156 27.4219H7.60887L10.0154 29.8284C10.1275 29.9405 10.2773 30 10.4298 30C10.5052 30 10.5813 29.9854 10.6537 29.9555C10.8727 29.8649 11.0154 29.6514 11.0156 29.4145L11.017 27.4219H16.7578C19.0194 27.4219 20.8594 25.5819 20.8594 23.3203V19.2773C20.8594 18.9537 20.597 18.6914 20.2734 18.6914Z" fill="white"></path><path d="M21.4837 0H20.0007C15.3048 0 11.4844 3.82043 11.4844 8.51637C11.4844 13.2123 15.3048 17.0327 20.0007 17.0327H21.4836C22.2166 17.0327 22.942 16.9396 23.6452 16.7556L25.8358 18.945C25.9479 19.057 26.0977 19.1165 26.2501 19.1165C26.3256 19.1165 26.4018 19.1019 26.4743 19.0719C26.6932 18.9812 26.8359 18.7675 26.8359 18.5306V15.1406C27.7634 14.3895 28.5339 13.4406 29.0746 12.3807C29.6887 11.1768 30 9.87668 30 8.51637C30 3.82043 26.1796 0 21.4837 0ZM25.8974 14.3868C25.7505 14.4975 25.6641 14.6708 25.6641 14.8549V17.1166L24.2302 15.6835C24.1187 15.5721 23.969 15.512 23.816 15.512C23.7585 15.512 23.7005 15.5205 23.6439 15.5379C22.9465 15.7522 22.2197 15.8609 21.4837 15.8609H20.0007C15.9509 15.8609 12.6562 12.5661 12.6562 8.51637C12.6562 4.4666 15.951 1.17188 20.0007 1.17188H21.4837C25.5335 1.17188 28.8281 4.4666 28.8281 8.51637C28.8281 10.8444 27.76 12.9841 25.8974 14.3868Z" fill="white"></path><path d="M23.3801 6.41159C23.2956 5.18493 22.3068 4.1961 21.08 4.11155C20.3846 4.0638 19.721 4.29835 19.2131 4.77255C18.7121 5.24019 18.4248 5.90124 18.4248 6.58626C18.4248 6.90987 18.6872 7.1722 19.0107 7.1722C19.3343 7.1722 19.5967 6.90987 19.5967 6.58626C19.5967 6.21952 19.7445 5.87962 20.0127 5.62925C20.2807 5.37911 20.631 5.2553 20.9995 5.28073C21.6457 5.32526 22.1665 5.8461 22.2111 6.49222C22.2561 7.14478 21.8279 7.72146 21.1931 7.86349C20.6788 7.97857 20.3196 8.42552 20.3196 8.95034V10.3581C20.3196 10.6817 20.582 10.944 20.9055 10.944C21.2292 10.944 21.4915 10.6817 21.4914 10.3581V8.99716C22.6721 8.71193 23.4642 7.63157 23.3801 6.41159Z" fill="white"></path><path d="M21.3195 12.2615C21.2105 12.1525 21.0594 12.0898 20.9053 12.0898C20.7512 12.0898 20.6 12.1525 20.491 12.2615C20.382 12.3705 20.3193 12.5217 20.3193 12.6758C20.3193 12.8305 20.3821 12.9816 20.491 13.0906C20.6 13.1996 20.7512 13.2617 20.9053 13.2617C21.0594 13.2617 21.2105 13.1996 21.3195 13.0906C21.4285 12.9811 21.4912 12.8305 21.4912 12.6758C21.4912 12.5217 21.4285 12.3705 21.3195 12.2615Z" fill="white"></path><path d="M16.1133 18.1641H3.75C3.42645 18.1641 3.16406 18.4264 3.16406 18.75C3.16406 19.0736 3.42645 19.3359 3.75 19.3359H16.1133C16.4369 19.3359 16.6992 19.0736 16.6992 18.75C16.6992 18.4264 16.4368 18.1641 16.1133 18.1641Z" fill="white"></path><path d="M16.5275 21.617C16.4186 21.508 16.2674 21.4453 16.1133 21.4453C15.9592 21.4453 15.808 21.508 15.699 21.617C15.59 21.726 15.5273 21.8771 15.5273 22.0312C15.5273 22.1854 15.59 22.3365 15.699 22.4455C15.808 22.5545 15.9592 22.6172 16.1133 22.6172C16.2674 22.6172 16.4186 22.5545 16.5275 22.4455C16.6365 22.3365 16.6992 22.1859 16.6992 22.0312C16.6992 21.8771 16.6365 21.726 16.5275 21.617Z" fill="white"></path><path d="M13.8086 21.4453H3.75C3.42645 21.4453 3.16406 21.7076 3.16406 22.0312C3.16406 22.3549 3.42645 22.6172 3.75 22.6172H13.8086C14.1322 22.6172 14.3946 22.3549 14.3946 22.0312C14.3946 21.7076 14.1322 21.4453 13.8086 21.4453Z" fill="white"></path><path d="M12.3047 14.8828H3.75C3.42645 14.8828 3.16406 15.1451 3.16406 15.4688C3.16406 15.7924 3.42645 16.0547 3.75 16.0547H12.3047C12.6283 16.0547 12.8906 15.7924 12.8906 15.4688C12.8906 15.1451 12.6282 14.8828 12.3047 14.8828Z" fill="white"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <path
+                d="M20.2734 18.6914C19.9499 18.6914 19.6875 18.9537 19.6875 19.2773V23.3203C19.6875 24.9357 18.3732 26.25 16.7578 26.25H10.4316C10.1081 26.25 9.84586 26.5121 9.84562 26.8355L9.8448 28.0005L8.44629 26.602C8.35576 26.3942 8.14857 26.25 7.90893 26.25H4.10156C2.48613 26.25 1.17188 24.9357 1.17188 23.3203V14.2969C1.17188 12.6814 2.48613 11.3672 4.10156 11.3672H10.0195C10.3431 11.3672 10.6055 11.1049 10.6055 10.7812C10.6055 10.4576 10.3431 10.1953 10.0195 10.1953H4.10156C1.83996 10.1953 0 12.0353 0 14.2969V23.3203C0 25.5819 1.83996 27.4219 4.10156 27.4219H7.60887L10.0154 29.8284C10.1275 29.9405 10.2773 30 10.4298 30C10.5052 30 10.5813 29.9854 10.6537 29.9555C10.8727 29.8649 11.0154 29.6514 11.0156 29.4145L11.017 27.4219H16.7578C19.0194 27.4219 20.8594 25.5819 20.8594 23.3203V19.2773C20.8594 18.9537 20.597 18.6914 20.2734 18.6914Z"
+                fill="white"
+              ></path>
+              <path
+                d="M21.4837 0H20.0007C15.3048 0 11.4844 3.82043 11.4844 8.51637C11.4844 13.2123 15.3048 17.0327 20.0007 17.0327H21.4836C22.2166 17.0327 22.942 16.9396 23.6452 16.7556L25.8358 18.945C25.9479 19.057 26.0977 19.1165 26.2501 19.1165C26.3256 19.1165 26.4018 19.1019 26.4743 19.0719C26.6932 18.9812 26.8359 18.7675 26.8359 18.5306V15.1406C27.7634 14.3895 28.5339 13.4406 29.0746 12.3807C29.6887 11.1768 30 9.87668 30 8.51637C30 3.82043 26.1796 0 21.4837 0ZM25.8974 14.3868C25.7505 14.4975 25.6641 14.6708 25.6641 14.8549V17.1166L24.2302 15.6835C24.1187 15.5721 23.969 15.512 23.816 15.512C23.7585 15.512 23.7005 15.5205 23.6439 15.5379C22.9465 15.7522 22.2197 15.8609 21.4837 15.8609H20.0007C15.9509 15.8609 12.6562 12.5661 12.6562 8.51637C12.6562 4.4666 15.951 1.17188 20.0007 1.17188H21.4837C25.5335 1.17188 28.8281 4.4666 28.8281 8.51637C28.8281 10.8444 27.76 12.9841 25.8974 14.3868Z"
+                fill="white"
+              ></path>
+              <path
+                d="M23.3801 6.41159C23.2956 5.18493 22.3068 4.1961 21.08 4.11155C20.3846 4.0638 19.721 4.29835 19.2131 4.77255C18.7121 5.24019 18.4248 5.90124 18.4248 6.58626C18.4248 6.90987 18.6872 7.1722 19.0107 7.1722C19.3343 7.1722 19.5967 6.90987 19.5967 6.58626C19.5967 6.21952 19.7445 5.87962 20.0127 5.62925C20.2807 5.37911 20.631 5.2553 20.9995 5.28073C21.6457 5.32526 22.1665 5.8461 22.2111 6.49222C22.2561 7.14478 21.8279 7.72146 21.1931 7.86349C20.6788 7.97857 20.3196 8.42552 20.3196 8.95034V10.3581C20.3196 10.6817 20.582 10.944 20.9055 10.944C21.2292 10.944 21.4915 10.6817 21.4914 10.3581V8.99716C22.6721 8.71193 23.4642 7.63157 23.3801 6.41159Z"
+                fill="white"
+              ></path>
+              <path
+                d="M21.3195 12.2615C21.2105 12.1525 21.0594 12.0898 20.9053 12.0898C20.7512 12.0898 20.6 12.1525 20.491 12.2615C20.382 12.3705 20.3193 12.5217 20.3193 12.6758C20.3193 12.8305 20.3821 12.9816 20.491 13.0906C20.6 13.1996 20.7512 13.2617 20.9053 13.2617C21.0594 13.2617 21.2105 13.1996 21.3195 13.0906C21.4285 12.9811 21.4912 12.8305 21.4912 12.6758C21.4912 12.5217 21.4285 12.3705 21.3195 12.2615Z"
+                fill="white"
+              ></path>
+              <path
+                d="M16.1133 18.1641H3.75C3.42645 18.1641 3.16406 18.4264 3.16406 18.75C3.16406 19.0736 3.42645 19.3359 3.75 19.3359H16.1133C16.4369 19.3359 16.6992 19.0736 16.6992 18.75C16.6992 18.4264 16.4368 18.1641 16.1133 18.1641Z"
+                fill="white"
+              ></path>
+              <path
+                d="M16.5275 21.617C16.4186 21.508 16.2674 21.4453 16.1133 21.4453C15.9592 21.4453 15.808 21.508 15.699 21.617C15.59 21.726 15.5273 21.8771 15.5273 22.0312C15.5273 22.1854 15.59 22.3365 15.699 22.4455C15.808 22.5545 15.9592 22.6172 16.1133 22.6172C16.2674 22.6172 16.4186 22.5545 16.5275 22.4455C16.6365 22.3365 16.6992 22.1859 16.6992 22.0312C16.6992 21.8771 16.6365 21.726 16.5275 21.617Z"
+                fill="white"
+              ></path>
+              <path
+                d="M13.8086 21.4453H3.75C3.42645 21.4453 3.16406 21.7076 3.16406 22.0312C3.16406 22.3549 3.42645 22.6172 3.75 22.6172H13.8086C14.1322 22.6172 14.3946 22.3549 14.3946 22.0312C14.3946 21.7076 14.1322 21.4453 13.8086 21.4453Z"
+                fill="white"
+              ></path>
+              <path
+                d="M12.3047 14.8828H3.75C3.42645 14.8828 3.16406 15.1451 3.16406 15.4688C3.16406 15.7924 3.42645 16.0547 3.75 16.0547H12.3047C12.6283 16.0547 12.8906 15.7924 12.8906 15.4688C12.8906 15.1451 12.6282 14.8828 12.3047 14.8828Z"
+                fill="white"
+              ></path>
+            </svg>
             <span class="phone">(316) 555-0116</span>
-          
           </button>
         </div>
-        
-    </div>
-    
-  </header>
-  
-
-  <!-- CAROUSEL -->
-  <section class="carousel" id="carousel">
-    <div class="carousel__container row">
-      <div class="carousel__left  col-7">
-        <div class="carousel__left-content">
-          <h1>Your Financial Future <br> <span class="text-green">Strategized</span> Today</h1>
-          <p class="text-grey-0 my-5">It is a long established fact that a reader will be distracted by the <br> reader content of a page when looking at its layout.</p>
-          <button type="button" class="rounded-pill btn btn-primary">Read More</button>
-        </div>
-        
       </div>
-      <div class="carousel__right col-5">
-        <img class="w-100" src="./assets/img/carousel-bg.png" alt="">
-        <img class="carousel__right-message w-50" src="./assets/img/Group-127.png" alt="">
-        <img class="carousel__right-figure w-75" src="./assets/img/Group-872.png" alt="">
+    </header>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE -->
-  <section class="service" id="service">
-    <div class="service__container">
-      <div class="service__list row">
-        <div class="service__list-item d-flex col-3">
-          <div class="service__item-icon text-purple">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="Iconly/Light/Time Square"><g id="Time Square"><path id="Stroke 1" fill-rule="evenodd" clip-rule="evenodd" d="M16.3347 2.75024H7.66567C4.64467 2.75024 2.75067 4.88924 2.75067 7.91624V16.0842C2.75067 19.1112 4.63467 21.2502 7.66567 21.2502H16.3337C19.3647 21.2502 21.2507 19.1112 21.2507 16.0842V7.91624C21.2507 4.88924 19.3647 2.75024 16.3347 2.75024Z" stroke="#CD28FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 3" d="M15.3912 14.0178L12.0002 11.9948V7.63379" stroke="#CD28FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg>
-          </div>
-          <div class="service__item-content">
-            <h5>On Time <br> Service.</h5>
+    <!-- CAROUSEL -->
+    <section class="carousel" id="carousel">
+      <div class="carousel__container row">
+        <div class="carousel__left col-7">
+          <div class="carousel__left-content">
+            <h1>
+              Your Financial Future <br />
+              <span class="text-green">Strategized</span> Today
+            </h1>
+            <p class="carousel__left-text text-grey-0">
+              It is a long established fact that a reader will be distracted by
+              the <br />
+              reader content of a page when looking at its layout.
+            </p>
+            <button type="button" class="rounded-pill btn btn-primary">
+              Read More
+            </button>
           </div>
         </div>
-
-        <div class="service__list-item col-3 d-flex">
-          <div class="service__item-icon text-yellow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g id="Iconly/Light/3 User"><g id="3 User"><path id="Stroke 1" d="M17.8877 11.7908C19.2827 11.5948 20.3567 10.3988 20.3597 8.94977C20.3597 7.52177 19.3187 6.33777 17.9537 6.11377" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 3" d="M19.7285 15.1445C21.0795 15.3465 22.0225 15.8195 22.0225 16.7945C22.0225 17.4655 21.5785 17.9015 20.8605 18.1755" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 5" fill-rule="evenodd" clip-rule="evenodd" d="M11.8867 15.5579C8.6727 15.5579 5.9277 16.0449 5.9277 17.9899C5.9277 19.9339 8.6557 20.4349 11.8867 20.4349C15.1007 20.4349 17.8447 19.9529 17.8447 18.0069C17.8447 16.0609 15.1177 15.5579 11.8867 15.5579Z" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M11.8867 12.782C13.9957 12.782 15.7057 11.073 15.7057 8.96304C15.7057 6.85404 13.9957 5.14404 11.8867 5.14404C9.77772 5.14404 8.06772 6.85404 8.06772 8.96304C8.05972 11.065 9.75672 12.775 11.8587 12.782H11.8867Z" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 9" d="M5.88481 11.7908C4.48881 11.5948 3.41581 10.3988 3.41281 8.94977C3.41281 7.52177 4.45381 6.33777 5.81881 6.11377" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Stroke 11" d="M4.04391 15.1445C2.69291 15.3465 1.74991 15.8195 1.74991 16.7945C1.74991 17.4655 2.19391 17.9015 2.91191 18.1755" stroke="#FFBB34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg>
-          </div>
-          <div class="service__item-content">
-            <h5>A Team Of <br> Professionals.</h5>
-          </div>
-    
-        </div>
-
-        <div class="service__list-item col-3 d-flex">
-          <div class="service__item-icon text-green-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="Iconly/Light/Chart"><g id="Chart"><path id="Line_182" d="M7.37143 10.2017V17.0618" stroke="#29FFDA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Line_183" d="M12.0381 6.91919V17.0619" stroke="#29FFDA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Line_184" d="M16.6286 13.8269V17.0619" stroke="#29FFDA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z" stroke="#29FFDA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg>
-          </div>
-          <div class="service__item-content">
-            <h5>Analyze Your <br> Business.</h5>
-          </div>
-
-          
-          
-        </div>
-
-        <div class="service__list-item col-3 d-flex">
-          <div class="service__item-icon text-blue">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="Iconly/Light/Activity"><g id="Activity"><path id="Path_33966" d="M7.24487 14.7815L10.238 10.8914L13.6522 13.5733L16.5813 9.79297" stroke="#2F9CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><circle id="Ellipse_741" cx="19.9954" cy="4.20027" r="1.9222" stroke="#2F9CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></circle><path id="Path" d="M14.9245 3.12012H7.65676C4.64532 3.12012 2.77805 5.25284 2.77805 8.26428V16.3467C2.77805 19.3581 4.60871 21.4817 7.65676 21.4817H16.2609C19.2723 21.4817 21.1396 19.3581 21.1396 16.3467V9.30776" stroke="#2F9CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></g></svg>
-          </div>
-          <div class="service__item-content">
-            <h5>A Team Of <br> Professionals.</h5>
-          </div>
+        <div class="carousel__right col-5">
+          <img
+            class="carousel__eclipse"
+            src="./assets/img/Ellipse-17.png"
+            alt=""
+          />
+          <img
+            class="carousel__bg w-100"
+            src="./assets/img/carousel-bg.png"
+            alt=""
+          />
+          <img
+            class="carousel__right-message"
+            src="./assets/img/Group-127.png"
+            alt=""
+          />
+          <img
+            class="carousel__right-figure"
+            src="./assets/img/Group-872.png"
+            alt=""
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PEOPLE -->
-  <section class="people" id="people">
-    <div class="people__container">
-      <div class="people__content row">
-        <div class="people__content-heading col-6">
-          <h1>Insurance Areas You Can <br> <span class="text-green">Fully</span> Trust</h1>
-        </div>
-        <div class="people__content-description col-6">
-          <p class="text-grey">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
-        </div>
-      </div>
-
-      <div class="people__card row">
-        <div class="people__card-item col-4">
-          <img class="w-100" src="./assets/img/people-1.jpg" alt="">
-          <div class="people__card-content">
-            <h6 class="text-grey">Finance</h6>
-            <h5>Technology Advisor</h5>
-            <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-          </div>
-        </div>
-
-        <div class="people__card-item col-4">
-          <img class="w-100" src="./assets/img/people-2.jpg" alt="">
-          <div class="people__card-content">
-            <h6 class="text-grey">Finance</h6>
-            <h5>Wealth Marketing</h5>
-            <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-          </div>
-        </div>
-
-        <div class="people__card-item col-4">
-          <img class="w-100"   src="./assets/img/people-3.jpg" alt="">
-          <div class="people__card-content">
-            <h6 class="text-grey">Finance</h6>
-            <h5>Business Investment</h5>
-            <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-          </div>
-        </div>
-      </div>  
-
-
-    </div>
-  </section>
-
-  <!-- QUESTION -->
-  <section class="question" id="question">
-    <section class="question__container row">
-      <div class="question__image col-6">
-        <img class="w-100" src="./assets/img/peoples-min.png" alt="">
-      </div>
-
-      <div class="question__content col-6">
-        <h1 class="question__content-heading">Insurance Areas You Can <br> <span class="text-green">Fully</span> Trust</h1>
-        <div class="question__content-item row">
-          <div class="text-green col-1">
-            01
+    <!-- SERVICE -->
+    <section class="service" id="service">
+      <div class="service__container">
+        <div class="service__list row">
+          <div class="service__list-item d-flex col-3">
+            <div class="service__item-icon text-purple">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g id="Iconly/Light/Time Square">
+                  <g id="Time Square">
+                    <path
+                      id="Stroke 1"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.3347 2.75024H7.66567C4.64467 2.75024 2.75067 4.88924 2.75067 7.91624V16.0842C2.75067 19.1112 4.63467 21.2502 7.66567 21.2502H16.3337C19.3647 21.2502 21.2507 19.1112 21.2507 16.0842V7.91624C21.2507 4.88924 19.3647 2.75024 16.3347 2.75024Z"
+                      stroke="#CD28FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 3"
+                      d="M15.3912 14.0178L12.0002 11.9948V7.63379"
+                      stroke="#CD28FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="service__item-content">
+              <h5>
+                On Time <br />
+                Service.
+              </h5>
+            </div>
           </div>
 
-          <div class="col-8">
-            <p>What Businesses You Provide Services For?</p>
+          <div class="service__list-item col-3 d-flex">
+            <div class="service__item-icon text-yellow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+              >
+                <g id="Iconly/Light/3 User">
+                  <g id="3 User">
+                    <path
+                      id="Stroke 1"
+                      d="M17.8877 11.7908C19.2827 11.5948 20.3567 10.3988 20.3597 8.94977C20.3597 7.52177 19.3187 6.33777 17.9537 6.11377"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 3"
+                      d="M19.7285 15.1445C21.0795 15.3465 22.0225 15.8195 22.0225 16.7945C22.0225 17.4655 21.5785 17.9015 20.8605 18.1755"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 5"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8867 15.5579C8.6727 15.5579 5.9277 16.0449 5.9277 17.9899C5.9277 19.9339 8.6557 20.4349 11.8867 20.4349C15.1007 20.4349 17.8447 19.9529 17.8447 18.0069C17.8447 16.0609 15.1177 15.5579 11.8867 15.5579Z"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 7"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.8867 12.782C13.9957 12.782 15.7057 11.073 15.7057 8.96304C15.7057 6.85404 13.9957 5.14404 11.8867 5.14404C9.77772 5.14404 8.06772 6.85404 8.06772 8.96304C8.05972 11.065 9.75672 12.775 11.8587 12.782H11.8867Z"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 9"
+                      d="M5.88481 11.7908C4.48881 11.5948 3.41581 10.3988 3.41281 8.94977C3.41281 7.52177 4.45381 6.33777 5.81881 6.11377"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Stroke 11"
+                      d="M4.04391 15.1445C2.69291 15.3465 1.74991 15.8195 1.74991 16.7945C1.74991 17.4655 2.19391 17.9015 2.91191 18.1755"
+                      stroke="#FFBB34"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="service__item-content">
+              <h5>
+                A Team Of <br />
+                Professionals.
+              </h5>
+            </div>
           </div>
 
-          <div class="col-3">
-            <i class="fa fa-angle-up"></i>
+          <div class="service__list-item col-3 d-flex">
+            <div class="service__item-icon text-green-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g id="Iconly/Light/Chart">
+                  <g id="Chart">
+                    <path
+                      id="Line_182"
+                      d="M7.37143 10.2017V17.0618"
+                      stroke="#29FFDA"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Line_183"
+                      d="M12.0381 6.91919V17.0619"
+                      stroke="#29FFDA"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Line_184"
+                      d="M16.6286 13.8269V17.0619"
+                      stroke="#29FFDA"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      id="Path"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z"
+                      stroke="#29FFDA"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="service__item-content">
+              <h5>
+                Analyze Your <br />
+                Business.
+              </h5>
+            </div>
           </div>
-        </div>
 
-        <hr>
-
-        <div class="question__content-item row">
-          <div class="text-green col-1">
-            02
-          </div>
-
-          <div class="col-8">
-            <p>What Is Digital Marketing Plan For Freelancers?</p>
-          </div>
-
-          <div class="col-3">
-            <i class="fa fa-angle-up"></i>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="question__content-item row">
-          <div class="text-green col-1">
-            03
-          </div>
-
-          <div class="col-8">
-            <p>
-              What Are The Acceptable Payment Terms?</p>
-          </div>
-
-          <div class="col-2">
-            <i class="fa fa-angle-up"></i>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="question__content-item row">
-          <div class="text-green col-1">
-            04
-          </div>
-
-          <div class="col-8">
-            <p>How Long Will It Take To See Results?</p>
-          </div>
-
-          <div class="col-3">
-            <i class="fa fa-angle-up"></i>
+          <div class="service__list-item col-3 d-flex">
+            <div class="service__item-icon text-blue">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g id="Iconly/Light/Activity">
+                  <g id="Activity">
+                    <path
+                      id="Path_33966"
+                      d="M7.24487 14.7815L10.238 10.8914L13.6522 13.5733L16.5813 9.79297"
+                      stroke="#2F9CFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <circle
+                      id="Ellipse_741"
+                      cx="19.9954"
+                      cy="4.20027"
+                      r="1.9222"
+                      stroke="#2F9CFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></circle>
+                    <path
+                      id="Path"
+                      d="M14.9245 3.12012H7.65676C4.64532 3.12012 2.77805 5.25284 2.77805 8.26428V16.3467C2.77805 19.3581 4.60871 21.4817 7.65676 21.4817H16.2609C19.2723 21.4817 21.1396 19.3581 21.1396 16.3467V9.30776"
+                      stroke="#2F9CFF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="service__item-content">
+              <h5>
+                A Team Of <br />
+                Professionals.
+              </h5>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </section>
 
-  <!-- PARTNER -->
-  <section class="partner" id="partner">
-    <div class="partner__container row">
-      <div class="col-3">
-        <h2>Trusted Partners</h2>
-      </div>
-      <div class="col-9 row">
-        <div class="col-2 text-grey">|</div>
-        <div class="col-2">
-          <img src="	https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Group-1-1.svg" alt="">
+    <!-- PEOPLE -->
+    <section class="people" id="people">
+      <div class="people__container">
+        <div class="people__content row">
+          <div class="people__content-heading col-6">
+            <h1 class="heading">
+              Insurance Areas You Can <br />
+              <span class="text-green">Fully</span> Trust
+            </h1>
+          </div>
+          <div class="people__content-description col-6">
+            <p class="text-grey-0">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters
+            </p>
+          </div>
         </div>
 
-        <div class="col-2">
-          <img src="	https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Group-1.svg" alt="">
-        </div>
-
-        <div class="col-2">
-          <img src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector-2.svg" alt="">
-        </div>
-
-        <div class="col-2">
-          <img src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector-1.svg" alt="">
-        </div>
-
-        <div class="col-2">
-          <img src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector.svg" alt="">
-        </div>
-      </div>
-        
-      
-    </div>
-  </section>
-
-  <!-- MARKET -->
-  <section class="market" id="market">
-    <div class="market__container">
-      <div class="market__heading d-flex justify-content-between">
-        <h1>Bridging The Gap Between <br> <span class="text-green">Market</span> And Your Goal</h1>
-        <button class="rounded-pill">VIEW ALL</button>
-      </div>
-
-      <div class="market__content row">
-        <div class="market__content-image col-6">
-          <img class="w-100" src="./assets/img/finace-blog-3.jpg" alt="">
-        </div>
-
-        <div class="market__content-image col-3">
-          <img class="w-100" src="./assets/img/finnace-blog-5.jpg" alt="">
-        </div>
-
-        <div class="market__content-image col-3">
-          <img class="w-100" src="./assets/img/finnace-blog-2.jpg" alt="">
-        </div>
-
-        <div class="market__content-image col-3 mt-3">
-          <img class="w-100" src="./assets/img/finance-blog-1.jpg" alt="">
-        </div>
-
-        <div class="market__content-image col-3 mt-3">
-          <img class="w-100" src="./assets/img/finace-blog-6.jpg" alt="">
-        </div>
-
-        <div class="market__content-image col-6">
-          <img class="w-100" src="./assets/img/finance-blog-4.jpg" alt="">
-        </div>
-
-  
-      </div>
-    </div>
-  </section>
-
-  <!-- CLIENT -->
-  <section class="client" id="client">
-    <div class="client__container  row">
-      <div class="client__left col-6">
-        <h1>What Our  <span class="text-green">Clients</span> Say <br> About Us</h1>
-        <div class="client__percent position-relative">
-          <div class=" d-flex position-absolute top-50 start-50 translate-middle">
-            <p>21%</p>
-            <div>
-              <p>SATISFIED</p>
-              <h1>Clients</h1>
+        <div class="people__card row">
+          <div class="people__card-item col-4">
+            <img class="w-100" src="./assets/img/people-1.jpg" alt="" />
+            <div class="people__card-content">
+              <h6 class="text-grey-0">Finance</h6>
+              <h5>Technology Advisor</h5>
+              <h6 class="read-btn text-green" >
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
             </div>
+          </div>
+
+          <div class="people__card-item col-4">
+            <img class="w-100" src="./assets/img/people-2.jpg" alt="" />
+            <div class="people__card-content">
+              <h6 class="text-grey-0">Finance</h6>
+              <h5>Wealth Marketing</h5>
+              <h6 class="read-btn text-green">
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
+            </div>
+          </div>
+
+          <div class="people__card-item col-4">
+            <img class="w-100" src="./assets/img/people-3.jpg" alt="" />
+            <div class="people__card-content">
+              <h6 class="text-grey-0">Finance</h6>
+              <h5>Business Investment</h5>
+              <h6 class="read-btn text-green">
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTION -->
+    <section class="question" id="question">
+      <section class="question__container row">
+        <div class="question__image col-6">
+          <img class="w-100" src="./assets/img/peoples-min.png" alt="" />
+        </div>
+
+        <div class="question__content col-6">
+          <h1 class="question__content-heading heading">
+            Insurance Areas You Can <br />
+            <span class="text-green">Fully</span> Trust
+          </h1>
+          <div class="question__content-item row">
+            <div class="text-green col-1">01</div>
+
+            <div class="col-9">
+              <p class="text-dark">What Businesses You Provide Services For?</p>
+            </div>
+
+            <div class="arrow col-2">
+              <i class="fa fa-angle-up"></i>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="question__content-item row">
+            <div class="text-green col-1">02</div>
+
+            <div class="col-9">
+              <p class="text-dark">What Is Digital Marketing Plan For Freelancers?</p>
+            </div>
+
+            <div class="arrow col-2">
+              <i class="fa fa-angle-up"></i>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="question__content-item row">
+            <div class="text-green col-1">03</div>
+
+            <div class="col-9">
+              <p class="text-dark">What Are The Acceptable Payment Terms?</p>
+            </div>
+
+            <div class="arrow col-2">
+              <i class="fa fa-angle-up"></i>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="question__content-item row">
+            <div class="text-green col-1">04</div>
+
+            <div class="col-9">
+              <p class="text-dark">How Long Will It Take To See Results?</p>
+            </div>
+
+            <div class="arrow col-2">
+              <i class="fa fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- PARTNER -->
+    <section class="partner" id="partner">
+      <div class="partner__container row">
+        <div class="col-3">
+          <h2 class="partner__heading">Trusted Partners</h2>
+        </div>
+        <div class="col-9 row">
+          <div class="col-2 text-grey">|</div>
+          <div class="col-2">
+            <img
+              src="	https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Group-1-1.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-2">
+            <img
+              src="	https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Group-1.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-2">
+            <img
+              src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector-2.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-2">
+            <img
+              src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector-1.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="col-2">
+            <img
+              src="https://wordpress.iqonic.design/product/wp/nairobi/wp-content/uploads/2021/07/Vector.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARKET -->
+    <section class="market" id="market">
+      <div class="market__container">
+        <div class="market__heading heading d-flex justify-content-between">
+          <h1>
+            Bridging The Gap Between <br />
+            <span class="text-green">Market</span> And Your Goal
+          </h1>
+          <div class="view-all">
+            <button class=" rounded-pill">VIEW ALL</button>
           </div>
           
         </div>
-      </div>
 
-      <div class="client__right position-relative col-6">
-        <div class="client__comment">
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, natus architecto. Doloremque in odio porro assumenda commodi! Sequi vitae totam ducimus minus sed dicta animi libero alias, exercitationem doloribus rem quisquam quidem voluptas, harum distinctio voluptates sapiente id eum ab?"</p>
-          <div class="client__info mt-5 d-flex justify-content-end">
-            <div class="client___info-name">
-              <h6>Declores J Maupin</h6>
-              <h6 class="text-green">DESIGNER</h6>
-            </div>
-            <img src="./assets/img/ava.png" alt="">
+        <div class="market__content row">
+          <div class="market__content-image col-6">
+            <img class="w-100" src="./assets/img/finace-blog-3.jpg" alt="" />
           </div>
 
-        </div>
-        <div class="comma position-absolute">
-          <img style="width: 50px;"  src="./assets/img/coma-green.png" alt="">
+          <div class="market__content-image col-3">
+            <img class="w-100" src="./assets/img/finnace-blog-5.jpg" alt="" />
+          </div>
+
+          <div class="market__content-image col-3">
+            <img class="w-100" src="./assets/img/finnace-blog-2.jpg" alt="" />
+          </div>
+
+          <div class="market__content-image col-3 mt-3">
+            <img class="w-100" src="./assets/img/finance-blog-1.jpg" alt="" />
+          </div>
+
+          <div class="market__content-image col-3 mt-3">
+            <img class="w-100" src="./assets/img/finace-blog-6.jpg" alt="" />
+          </div>
+
+          <div class="market__content-image col-6">
+            <img class="w-100" src="./assets/img/finance-blog-4.jpg" alt="" />
+          </div>
         </div>
       </div>
+    </section>
 
-      
-      
-    </div>
-  </section>
+    <!-- CLIENT -->
+    <section class="client" id="client">
+      <div class="client__container row">
+        <div class="client__left col-6">
+          <h1 class="heading">
+            What Our <span class="text-green">Clients</span> Say <br />
+            About Us
+          </h1>
+          <div class="client__percent position-relative">
+            <div
+              class="d-flex position-absolute top-50 start-50 translate-middle"
+            >
+              <p>21%</p>
+              <div>
+                <p>SATISFIED</p>
+                <h1>Clients</h1>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- NEWS -->
-  <section class="news" id="news">
-    <div class="news__container">
-      <h1 class="news__heading">Latest <span class="text-green">News</span> & Article</h1>
-      <div class="news__card d-flex justify-content-around">
-          <div class="card news__card-item " >
-            <img src="./assets/img/new-1.jpg" alt="...">
+        <div class="client__right position-relative col-6">
+          <div class="client__comment">
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi, natus architecto. Doloremque in odio porro assumenda
+              commodi! Sequi vitae totam ducimus minus sed dicta animi libero
+              alias, exercitationem doloribus rem quisquam quidem voluptas,
+              harum distinctio voluptates sapiente id eum ab?"
+            </p>
+            <div class="client__info mt-5 d-flex justify-content-end">
+              <div class="client___info-name">
+                <h6 class="full-name">Declores J Maupin</h6>
+                <h6 class="text-green">DESIGNER</h6>
+              </div>
+              <img src="./assets/img/ava.png" alt="" />
+            </div>
+          </div>
+          <div class="comma position-absolute">
+            <img style="width: 50px" src="./assets/img/coma-green.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news" id="news">
+      <div class="news__container">
+        <h1 class="news__heading heading">
+          Latest <span class="text-green">News</span> & Article
+        </h1>
+        <div class="news__card d-flex justify-content-around">
+          <div class="card news__card-item">
+            <img src="./assets/img/new-1.jpg" alt="..." />
             <div class="card-body">
-              <h6 class="news__jobs mt-2 text-black fw-light">BY JOHN DOE APPLICATION</h6>
+              <h6 class="news__jobs mt-2 text-black fw-light">
+                BY JOHN DOE APPLICATION
+              </h6>
               <h5 class="card-title my-3">IT Company Is About Growth</h5>
               <p class="card-text text-grey-0">
-                It is a long established fact that a reader will be distracted by the readable.</p>
-              <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-
-              <p class="news__date">
-                30 July
+                It is a long established fact that a reader will be distracted
+                by the readable.
               </p>
+              <h6 class="read-btn text-green">
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
+
+              <p class="news__date">30 July</p>
             </div>
           </div>
 
-          <div class="card news__card-item ">
-            <img src="./assets/img/new-2.jpg" class="card-img-top" alt="...">
+          <div class="card news__card-item">
+            <img src="./assets/img/new-2.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h6 class="news__jobs mt-2 text-black fw-light">BY JOHN DOE APPLICATION</h6>
+              <h6 class="news__jobs mt-2 text-black fw-light">
+                BY JOHN DOE APPLICATION
+              </h6>
               <h5 class="card-title my-3">Top Ten Best Technologies In 2021</h5>
               <p class="card-text text-grey-0">
-                It is a long established fact that a reader will be distracted by the readable.</p>
-              <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-
-              <p class="news__date">
-                7 August
+                It is a long established fact that a reader will be distracted
+                by the readable.
               </p>
+              <h6 class="read-btn text-green">
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
+
+              <p class="news__date">7 August</p>
             </div>
           </div>
 
-          <div class="card news__card-item  ">
-            <img src="./assets/img/new-3.jpg" class="card-img-top" alt="...">
+          <div class="card news__card-item">
+            <img src="./assets/img/new-3.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h6 class="news__jobs mt-2 text-black fw-light">BY JOHN DOE APPLICATION</h6>
+              <h6 class="news__jobs mt-2 text-black fw-light">
+                BY JOHN DOE APPLICATION
+              </h6>
               <h5 class="card-title my-3">Developing Tech Systems</h5>
               <p class="card-text text-grey-0">
-                It is a long established fact that a reader will be distracted by the readable.</p>
-              <h6 class="text-green">READ MORE <i class="fa fa-angle-right"></i></h6>
-
-              <p class="news__date">
-                7 August
+                It is a long established fact that a reader will be distracted
+                by the readable.
               </p>
+              <h6 class="read-btn text-green">
+                READ MORE <i class="fa fa-angle-right"></i>
+              </h6>
+
+              <p class="news__date">7 August</p>
             </div>
           </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- REQUEST -->
-  <section class="request" id="request">
-    <div class="request__container row">
-      <div class="request__left col-6">
-        <img class="request__img" src="./assets/img/request-left.png" alt="">
-      </div>
-
-      <div class="request__right col-6">
-        <h3 class="request__heading">Request A <span class="text-green">CALL</span> Back?</h3>
-
-        <p class="request__description my-4 text-grey-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Enter e-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-          <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="far fa-paper-plane"></i></button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- FOOTER -->
-  <section class="footer" id="footer">
-    <div class="footer__container row">
-      <div class="footer__col col-3">
-        <img class="w-50" src="./assets/img/logo.png" alt="">
-        <h5 class="my-3">Follow Us: </h5>
-        <div class="footer__social-icon">
-          <span class="mx-2"><i class="fab fa-instagram"></i></span>
-          <span class="mx-2"><i class="fab fa-facebook-square"></i></span>
-          <span class="mx-2"><i class="fab fa-pinterest"></i></span>
+    <!-- REQUEST -->
+    <section class="request" id="request">
+      <div class="request__container row">
+        <div class="request__left col-6">
+          <img
+            class="request__img"
+            src="./assets/img/request-left.png"
+            alt=""
+          />
+        </div>
+
+        <div class="request__right col-6">
+          <h3 class="request__heading">
+            Request A <span class="text-green">CALL</span> Back?
+          </h3>
+
+          <p class="request__description my-4 text-grey-0">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter e-mail"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              <i class="far fa-paper-plane"></i>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="footer__col col-3">
-        <h5 class="footer__heading">Career</h5>
-        <ul class="footer__list">
-          <li class="footer__list-item">Want to jump islands? Happy to hear more about you at</li>
-          <li class="footer__list-item text-dark">jobs@nairobi.com.</li>
-          <li class="footer__list-item text-green"><span class="text-green">Carrer@finance.com</span></li>
-        </ul>
-      </div>
+      <!-- FOOTER -->
+      <section class="footer" id="footer">
+        <div class="footer__container row">
+          <div class="footer__col col-3">
+            <img class="w-50" src="./assets/img/logo.png" alt="" />
+            <h5 class="my-3">Follow Us:</h5>
+            <div class="footer__social-icon">
+              <span class="mx-2"><i class="fab fa-instagram"></i></span>
+              <span class="mx-2"><i class="fab fa-facebook-square"></i></span>
+              <span class="mx-2"><i class="fab fa-pinterest"></i></span>
+            </div>
+          </div>
 
-      <div class="footer__col col-3">
-        <h5 class="footer__heading">Important Links</h5>
-        <ul class="footer__list">
-          <li class="footer__list-item">Left Sidebar</li>
-          <li class="footer__list-item">Right Sidebar</li>
-          <li class="footer__list-item">Masonary Default</li>
-          <li class="footer__list-item">Masonary Standard</li>
-          <li class="footer__list-item">Left Sidebar Grid 2</li>
+          <div class="footer__col col-3">
+            <h5 class="footer__heading">Career</h5>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                Want to jump islands? Happy to hear more about you at
+              </li>
+              <li class="footer__list-item text-dark">jobs@nairobi.com.</li>
+              <li class="footer__list-item text-green">
+                <span class="text-green">Carrer@finance.com</span>
+              </li>
+            </ul>
+          </div>
 
-        </ul>
-      </div>
+          <div class="footer__col col-3">
+            <h5 class="footer__heading">Important Links</h5>
+            <ul class="footer__list">
+              <li class="footer__list-item">Left Sidebar</li>
+              <li class="footer__list-item">Right Sidebar</li>
+              <li class="footer__list-item">Masonary Default</li>
+              <li class="footer__list-item">Masonary Standard</li>
+              <li class="footer__list-item">Left Sidebar Grid 2</li>
+            </ul>
+          </div>
 
-      <div class="footer__col col-3">
-        <h5 class="footer__heading">Contact Information</h5>
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <i class="fa fa-map-marker-alt text-green me-1"></i> 2464 Royal Ln. Mesa, New Jersey 45463
-          </li>
-          <li class="footer__list-item "><i class="fa fa-envelope text-green me-1"></i> nairobi@example.com</li>
-          <li class="footer__list-item "><i class="fa fa-phone-volume text-green me-1"></i> (316) 555-0116</li>
-        </ul>
-      </div>
+          <div class="footer__col col-3">
+            <h5 class="footer__heading">Contact Information</h5>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <i class="fa fa-map-marker-alt text-green me-1"></i> 2464 Royal
+                Ln. Mesa, New Jersey 45463
+              </li>
+              <li class="footer__list-item">
+                <i class="fa fa-envelope text-green me-1"></i>
+                nairobi@example.com
+              </li>
+              <li class="footer__list-item">
+                <i class="fa fa-phone-volume text-green me-1"></i> (316)
+                555-0116
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- COPYRIGHT -->
+      <section class="copyright mt-4">
+        <div class="copyright__container d-flex justify-content-between">
+          <div class="copyright__left">
+            <span>Privacy Policy</span>
+            <span style="margin-left: 2.5rem">Terms & Condition</span>
+          </div>
+          <div class="copyright__right">
+            <p>© Copyright 2023 travil. All Rights Reserved.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top position-relative">
+      <a href="#"><i class="fa fa-arrow-up"></i></a>
     </div>
-  </section>
 
-  <!-- COPYRIGHT -->
-  <section class="copyright mt-4">
-    <div class="copyright__container d-flex justify-content-between">
-      <div class="copyright__left">
-        <span>Privacy Policy</span>
-        <span style="margin-left: 2.5rem;">Terms & Condition</span>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-      </div>
-      <div class="copyright__right">
-        <p>© Copyright 2023 travil. All Rights Reserved.</p>
-      </div>
-    </div>
-  </section>
-  </section>
-
-  <!-- BACK TO TOP -->
-  <div class="back-to-top position-relative">
-    <a href="#"><i class="fa fa-arrow-up"></i></a>
-    
-  </div>
-
-  
-
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

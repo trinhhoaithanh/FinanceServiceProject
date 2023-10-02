@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap");
+
 /* VARIABLE CSS */
 :root {
   --body-font: "Mulish", sans-serif;
@@ -50,6 +49,13 @@ body {
 .text-blue {
   background-color: #e8f4ff;
 }
+
+.heading{
+  font-weight: 500;
+  font-style: 50px;
+  color: #050404;
+  font-family: 'Lexend', sans-serif;
+}
 /* HEADER */
 #header {
   overflow: hidden;
@@ -59,7 +65,7 @@ body {
   background-color: #f6f9fb;
   height: 60px;
   line-height: 60px;
-  padding: 0 28px;
+  padding: 0 30px;
 }
 
 #header .header__container .header__top .time span,
@@ -78,13 +84,11 @@ body {
 }
 
 #header .header__container .header__bottom {
-  padding: 0 30px;
-  padding-top: 20px;
   /* position: fixed; */
   background-color: white;
   z-index: 10;
   width: 100%;
-  padding: 20px 30px 0;
+  padding: 20px 20px 0;
 }
 
 #header .header__container .header__bottom .contact-btn {
@@ -143,18 +147,27 @@ body {
 
 .carousel .carousel__container .carousel__left {
   display: flex;
-  
+
   align-items: center;
   height: 100vh;
   padding: 0;
 }
 
-.carousel .carousel__container .carousel__left h1 {
-  font-size: 70px;
+.carousel .carousel__container .carousel__left .carousel__left-content{
+  padding-left: 10px;
 }
 
-.carousel .carousel__container .carousel__left p {
-    margin: 57px 0;
+
+.carousel .carousel__container .carousel__left .carousel__left-content h1 {
+  font-size: 70px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.carousel .carousel__container .carousel__left .carousel__left-text {
+  margin: 35px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 .carousel .carousel__container .carousel__left button {
@@ -169,50 +182,72 @@ body {
   background: #14cd80;
 }
 
-
-.carousel .carousel__container .carousel__left h1{
-    font-size: 70px;
-    font-weight: 400;
+.carousel .carousel__container .carousel__left h1 {
+  font-size: 70px;
+  font-weight: 400;
 }
 
 .carousel .carousel__container .carousel__right {
-  background-image: url(../img/Pattern.png), url(../img/Ellipse-17.png);
+  background-image: url(../img/Pattern.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   position: relative;
 }
 
-.carousel .carousel__container .carousel__right-figure,
+.carousel__eclipse {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+}
+
+.carousel__bg {
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 800x;
+  height: 700px;
+  object-fit: cover;
+}
+
 .carousel .carousel__container .carousel__right-message {
   position: absolute;
+  top: 300px;
+  left: -150px;
+  width: 200px;
+  height: fit-content;
 }
 
 .carousel .carousel__container .carousel__right-figure {
-  top: 0px;
-  /* right: -50px; */
+  position: absolute;
+  top: 90px;
+  right: -70px;
+  width: 476px;
+  height: 325px;
 }
 
-.carousel .carousel__container .carousel__right-message {
-  top: 200px;
-  left: -200px;
-}
-
-.carousel .carousel__container .carousel__right {
-}
 /* SERVICE */
 #service {
   padding: 100px 50px;
   overflow: hidden;
 }
 
-.service .service__container {
-}
-
 .service .service__container .service__list {
+  margin-top: 112px;
 }
 
-.service .service__container .service__list-item {
+.service .service__container .service__list-item{
+  padding: 30px;
+  border: none;
+
+}
+
+.service .service__container .service__list-item:hover {
+  border: none;
+  box-shadow: 0px 11px 21px -1px rgba(234,231,231,1);
+-webkit-box-shadow: 0px 11px 21px -1px rgba(234,231,231,1);
+-moz-box-shadow: 0px 11px 21px -1px rgba(234,231,231,1);
+transition: all 0.3s;
 }
 
 .service .service__container .service__list-item .service__item-icon {
@@ -223,7 +258,11 @@ body {
 
 .service .service__container .service__list-item .service__item-content h5 {
   font-size: 22px;
-  margin-left: 10px;
+  margin-left: 20px;
+  font-family: "Lexend", Sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    color: #1D3047;
 }
 /* PEOPLE */
 .people {
@@ -234,6 +273,9 @@ body {
 
 .people .people__container .people__content .people__content-heading h1 {
   font-size: 50px;
+  color: #050404;
+  font-weight: 500;
+  font-family: 'Lexend', sans-serif;
 }
 
 .people .people__container .people__content {
@@ -242,6 +284,11 @@ body {
 
 .people .people__container .people__content .people__content-description p {
   text-align: right;
+  
+}
+
+.people .people__container .people__content .people__content-description{
+  margin: auto;
 }
 
 .people .people__container .people__card .people__card-item img {
@@ -269,13 +316,12 @@ body {
   padding-top: 35px;
 }
 
-.people
-  .people__container
-  .people__card
-  .people__card-item
-  .people__card-content
-  h5 {
-  font-weight: 700;
+
+
+ .read-btn {
+  font-style: 14px;
+  font-family: 'Oswald', sans-serif;
+  
 }
 /* QUESTION */
 .question {
@@ -295,9 +341,20 @@ body {
   margin-bottom: 60px;
 }
 
-.question__content-item {
+.question .question__container .question__content{
+  margin-top: 132px;
+}
+
+.question__content-item{
+  font-family: 'Lexend', sans-serif;
+}
+
+.question__content-item .col-9 p, .question__content-item .col-1 {
   font-size: 22px;
-  font-weight: bold;
+}
+
+.question__content-item .arrow {
+  text-align: right;
 }
 
 .question .question__container .question__content hr {
@@ -306,9 +363,16 @@ body {
 /* PARTNER */
 .partner {
   overflow: hidden;
-  padding: 70px 70px;
+  padding: 70px 152px;
   background-color: #f0f4f7;
   margin-bottom: 162px;
+}
+
+.partner .partner__heading{
+  font-size: 29px;
+  color: #050404;
+  font-weight: 600;
+  font-family: 'Lexend', sans-serif;
 }
 /* MARKET */
 .market {
@@ -327,8 +391,12 @@ body {
 .market .market__container .market__heading h1 {
   font-size: 50px;
 }
+.market .market__container .market__heading .view-all{
+  margin-top: 30px;
+  
+}
 
-.market .market__container .market__heading button {
+.market .market__container .market__heading .view-all button {
   width: 142px;
   height: 56px;
   background: #00447f;
@@ -337,7 +405,7 @@ body {
   color: white;
 }
 
-.market .market__container .market__heading button:hover {
+.market .market__container .market__heading .view-all button:hover {
   background-color: #14cd80;
 }
 
@@ -348,7 +416,8 @@ body {
   overflow: hidden;
   background-color: #f0f4f7;
   padding: 100px 50px 0px;
-  margin-bottom: 100px;
+  margin: 20px 0;
+
 }
 
 .client .client__container .client__left .client__percent {
@@ -362,6 +431,13 @@ body {
 .client .client__container .client__right .client__comment {
   background-color: white;
   padding: 30px 20px;
+}
+
+.client .client__container .client__right .client__comment p{
+  font-style: italic;
+  color: #2e2e2e;
+  line-height: 1.75;
+
 }
 
 .client .client__container .client__right .comma {
@@ -383,11 +459,18 @@ body {
   margin-top: 10px;
   text-align: left;
 }
+
+.client .client__container .client__right .client__info .client___info-name .full-name{
+  font-size: 21px;
+  color: #050404;
+  font-family: 'Lexend', sans-serif;
+
+}
 /* NEWS */
 .news {
   overflow: hidden;
-  padding: 0 50px;
-  padding-bottom: 150px;
+
+  padding: 150px 50px;
 }
 
 .news .news__heading {
@@ -400,6 +483,20 @@ body {
   border-radius: 0px;
   padding: 0;
   width: 435px;
+}
+
+.news .news__container .card .card-body .card-title {
+  font-size: 21px;
+color: #050404;
+font-family: 'Lexend', sans-serif;
+}
+
+.news .news__container .card .card__body .news__jobs{
+  font-size: 16px;
+  color: #606060;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+
 }
 
 .news .news__container .card img {
@@ -433,6 +530,15 @@ body {
 
 .request__heading {
   font-size: 28px;
+color: #050404;
+font-family: 'Lexend', sans-serif;
+}
+
+.request__description{
+  font-size: 16px;
+  color: #606060;
+  font-family: "Mulish", sans-serif;
+
 }
 
 .input-group input {
@@ -460,10 +566,12 @@ body {
 .footer {
   overflow: hidden;
   margin-top: 300px;
+  padding: 0 40px;
 }
 
 .footer__heading {
   font-size: 22px;
+  font-weight: 700;
 }
 
 .footer__list {
@@ -473,7 +581,10 @@ body {
 
 .footer__list-item {
   padding: 10px 0;
-  color: #909090;
+  color: #606060;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+
 }
 /* COPYRIGHT */
 .copyright {
@@ -482,7 +593,8 @@ body {
   border-radius: 6px;
   padding: 15px 15px 5px;
   color: white;
-  width: 1400px;
+  width: 1400px;  
+  
 }
 
 /* BACK TO TOP */
