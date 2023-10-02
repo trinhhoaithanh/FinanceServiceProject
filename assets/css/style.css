@@ -287,6 +287,8 @@ transition: all 0.3s;
   
 }
 
+
+
 .people .people__container .people__content .people__content-description{
   margin: auto;
 }
@@ -315,6 +317,17 @@ transition: all 0.3s;
   padding-left: 30px;
   padding-top: 35px;
 }
+
+.people
+  .people__container
+  .people__card
+  .people__card-item
+  .people__card-content .people-job{
+    font-size: 22px;
+  font-family: "Lexend", Sans-serif;
+    font-weight: 500;
+    color: #050404;
+  }
 
 
 
