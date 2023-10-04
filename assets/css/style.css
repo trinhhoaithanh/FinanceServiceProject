@@ -135,6 +135,18 @@ body {
   margin-left: 44px;
 }
 
+#header
+  .header__container
+  .header__bottom
+  .navbar
+  .container-fluid
+  .collapse
+  .navbar-nav
+  .nav-item .nav-link:hover
+  {
+    color: #11ab6b !important; 
+  }
+
 /* CAROUSEL */
 .carousel {
   padding-left: 50px;
@@ -202,6 +214,15 @@ body {
 }
 
 .carousel__bg {
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 800x;
+  height: 700px;
+  object-fit: cover;
+}
+
+.carousel__pattern{
   position: absolute;
   top: 0px;
   left: -50px;
@@ -301,6 +322,7 @@ transition: all 0.3s;
 
 .people .people__container .people__card .people__card-item {
   position: relative;
+  overflow: hidden;
 }
 
 .people
@@ -310,7 +332,7 @@ transition: all 0.3s;
   .people__card-content {
   position: absolute;
   top: 350px;
-  left: 50px;
+  left: 30px;
   width: 378px;
   height: 154px;
   background-color: white;
@@ -336,6 +358,38 @@ transition: all 0.3s;
   font-family: 'Oswald', sans-serif;
   
 }
+
+.people__card-item{
+  width: 440px;
+  height: 550px; 
+  overflow: hidden;
+  
+}
+
+.people__card-item:hover img{
+  transform: scale(1.05);
+  transition: all 0.5s;
+  transform-origin: center center;
+  
+}
+
+.people
+  .people__container
+  .people__card
+  .people__card-item
+  .people__card-content .read-btn:hover{
+    color: #050404;
+  }
+
+  .people
+  .people__container
+  .people__card
+  .people__card-item
+  .people__card-content .read-btn:hover i{
+    margin-left: 10px;
+    transition: all 0.5s;
+  }
+
 /* QUESTION */
 .question {
   overflow: hidden;
@@ -422,8 +476,18 @@ transition: all 0.3s;
   background-color: #14cd80;
 }
 
-.market .market__container .market__content {
+.market .market__container .market__content .market__content-image{
+  overflow: hidden;
 }
+
+
+.market .market__container .market__content .market__content-image:hover img{
+  transform: scale(1.05);
+  transition: all 0.5s;
+
+}
+
+
 /* CLIENT */
 .client {
   overflow: hidden;
@@ -479,6 +543,7 @@ transition: all 0.3s;
   font-family: 'Lexend', sans-serif;
 
 }
+
 /* NEWS */
 .news {
   overflow: hidden;
@@ -529,6 +594,7 @@ font-family: 'Lexend', sans-serif;
   right: 25px;
   color: white;
 }
+
 
 /* REQUEST */
 .request {
