@@ -335,18 +335,19 @@ transition: all 0.3s;
   left: 30px;
   width: 378px;
   height: 154px;
-  background-color: white;
   padding-left: 30px;
   padding-top: 35px;
+ 
 }
 
-.people
-  .people__container
-  .people__card
-  .people__card-item
-  .people__card-content .people-job{
+.card-content{
+  background-color: white;
+}
+
+
+.people-job{
     font-size: 22px;
-  font-family: "Lexend", Sans-serif;
+    font-family: "Lexend", Sans-serif;
     font-weight: 500;
     color: #050404;
   }
@@ -373,19 +374,11 @@ transition: all 0.3s;
   
 }
 
-.people
-  .people__container
-  .people__card
-  .people__card-item
-  .people__card-content .read-btn:hover{
+ .read-btn:hover{
     color: #050404;
   }
 
-  .people
-  .people__container
-  .people__card
-  .people__card-item
-  .people__card-content .read-btn:hover i{
+.read-btn:hover i{
     margin-left: 10px;
     transition: all 0.5s;
   }
@@ -427,6 +420,20 @@ transition: all 0.3s;
 .question .question__container .question__content hr {
   width: 85%;
 }
+
+.question__response{
+  font-family: "Mulish", Sans-serif;
+  color: #606060;
+  font-size: 16px !important;
+}
+
+.question__content-item .col-1,.question__content-item .col-9{
+  font-size: 22px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+}
+
+  
 /* PARTNER */
 .partner {
   overflow: hidden;
@@ -446,9 +453,6 @@ transition: all 0.3s;
   overflow: hidden;
   padding: 0 50px;
   padding-bottom: 150px;
-}
-
-.market .market__container {
 }
 
 .market .market__container .market__heading {
@@ -477,16 +481,73 @@ transition: all 0.3s;
 }
 
 .market .market__container .market__content .market__content-image{
-  overflow: hidden;
+  position: relative;
+}
+
+.image-container{
+overflow: hidden;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+
+.image-container:hover img{
+  transform: scale(1.1);
+  
+}
+
+.market__card{
+  position: absolute;
+  display: none;
+  bottom: 25px;
+  left: 50px;
+  
+}
+
+.market__content-image:hover .market__card{
+  display: block;
+  position: absolute;
+  animation-name: cardIn;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
 }
 
 
-.market .market__container .market__content .market__content-image:hover img{
-  transform: scale(1.05);
-  transition: all 0.5s;
-
+@keyframes cardIn{
+  0% {
+    display: block;
+    opacity: 0.5;
+    bottom: 25px;
+    left: 25px;
+  }
+  25% {
+    display: block;
+    opacity: 0.5;
+    bottom: 25px;
+    left: 30px;
+  }
+  50% {
+    display: block;
+    opacity: 0.8;
+    bottom: 25px;
+    left: 35px;
+  }
+  75% {
+    display: block;
+    opacity: 0.8;
+    bottom: 25px;
+    left: 45px;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    bottom: 25px;
+    left: 50px;
+  }
 }
-
 
 /* CLIENT */
 .client {
@@ -561,6 +622,12 @@ transition: all 0.3s;
   border-radius: 0px;
   padding: 0;
   width: 435px;
+  
+}
+
+.news__card-img{
+    overflow: hidden;
+    
 }
 
 .news .news__container .card .card-body .card-title {
@@ -580,6 +647,11 @@ font-family: 'Lexend', sans-serif;
 .news .news__container .card img {
   border-radius: 0px;
   background-size: cover;
+}
+
+.news .news__container .news__card-item:hover img {
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 .news .news__container .card .card__body {
