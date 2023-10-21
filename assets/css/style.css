@@ -61,6 +61,14 @@ body {
   overflow: hidden;
 }
 
+.show-scroll{
+  top: 0px;
+}
+
+.scroll-down{
+  display: none;
+}
+
 #header .header__container .header__top {
   background-color: #f6f9fb;
   height: 60px;
@@ -84,9 +92,9 @@ body {
 }
 
 #header .header__container .header__bottom {
-  /* position: fixed; */
+  position: fixed;
   background-color: white;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   padding: 20px 20px 0;
 }
@@ -150,11 +158,8 @@ body {
 /* CAROUSEL */
 .carousel {
   padding-left: 50px;
-  margin-top: 55px;
+  margin-top: 150px;
   overflow: hidden;
-}
-
-.carousel .carousel__container {
 }
 
 .carousel .carousel__container .carousel__left {
@@ -430,7 +435,7 @@ transition: all 0.3s;
 .question__content-item .col-1,.question__content-item .col-9{
   font-size: 22px;
   font-family: 'Lexend', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 
   
